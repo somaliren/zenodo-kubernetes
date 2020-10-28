@@ -18,7 +18,7 @@ spec:
     app: zenodo
     tier: frontend
   externalIPs:
-  - 10.250.27.254
+  - 154.73.25.75
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -41,14 +41,14 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: infnct/zenodo:1.0.10
+        image: somaliren/zenodo:1.0.10
         resources:
           requests:
-            memory: "4Gi"
-            ephemeral-storage: "4Gi"
+            memory: "6Gi"
+            ephemeral-storage: "6Gi"
           limits:
-            memory: "4Gi"
-            ephemeral-storage: "4Gi"
+            memory: "6Gi"
+            ephemeral-storage: "6Gi"
         volumeMounts:
         - name: zenodo-archive-storage
           mountPath: /opt/zenodo_venv/var/instance/archive

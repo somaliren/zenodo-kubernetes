@@ -6,7 +6,7 @@ data:
   invenio.cfg: |
     from invenio_github.config import GITHUB_REMOTE_APP
     #Global configurations
-    APP_ALLOWED_HOSTS = ["your.open.access.repository.domain"]
+    APP_ALLOWED_HOSTS = ["sorer.somaliren.org.so"]
     #Endpoint configurations
     ACCOUNTS_SESSION_REDIS_URL = "redis://zenodo-redis:6379/2"
     BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
@@ -23,7 +23,7 @@ data:
     #Communities configurations
     ZENODO_COMMUNITIES_NOTIFY_DISABLED = []
     ZENODO_COMMUNITIES_AUTO_ENABLED = True
-    ZENODO_COMMUNITIES_AUTO_REQUEST = ['infn']
+    ZENODO_COMMUNITIES_AUTO_REQUEST = ['somaliren']
     ZENODO_COMMUNITIES_REQUEST_IF_GRANTS = []
     ZENODO_COMMUNITIES_ADD_IF_GRANTS = []
     ZENODO_FRONTPAGE_COMMUNITY = 'infn'
@@ -31,10 +31,10 @@ data:
     COMMUNITIES_EDIT_TEMPLATE = 'zenodo_communities/new.html'
     COMMUNITIES_INDEX_TEMPLATE = 'zenodo_communities/index.html'
     #Theme configurations
-    THEME_SITENAME = "YOUR Open Access Repository"
-    THEME_SITEURL = "https://your.open.access.repository.domain"
-    THEME_TWITTERHANDLE = ""
-    THEME_LOGO = "img/yourlogo.png"
+    THEME_SITENAME = "Somali Research and Education Repository"
+    THEME_SITEURL = "https://sorer.somaliren.org.so"
+    THEME_TWITTERHANDLE = "@SomaliREN"
+    THEME_LOGO = "img/sorer.svg"
     THEME_GOOGLE_ANALYTICS_ID = "YOURGOOGLEID"
     THEME_DOI_EXAMPLE = '10.your.doi/your.doi.suffix/21260'
     ZENODO_RECORDS_UI_LINKS_FORMAT = "https://your.open.access.repository.domain/record/{recid}"
@@ -43,7 +43,7 @@ data:
     SECURITY_RECOVERABLE = False
     SECURITY_REGISTERABLE = False
     SECURITY_LOGIN_WITHOUT_CONFIRMATION = False
-    SECURITY_EMAIL_SENDER = "librarian@your.open.access.repository"
+    SECURITY_EMAIL_SENDER = "librarian@somaliren.org"
     SECURITY_EMAIL_SUBJECT_REGISTER = "Welcome to %s!"%THEME_SITENAME
     #Mail configurations
     MAIL_SERVER = "SERVER"
@@ -53,8 +53,8 @@ data:
     MAIL_USERNAME = "USER"
     MAIL_PASSWORD = "PASSWORD"
     MAIL_SUPPRESS_SEND = False
-    ZENODO_ADMIN_EMAIL = "librarian@oyour.open.access.repository.domain"
-    COMMUNITIES_REQUEST_EMAIL_SENDER = "librarian@your.open.access.repository.domain"
+    ZENODO_ADMIN_EMAIL = "librarian@somaliren.org"
+    COMMUNITIES_REQUEST_EMAIL_SENDER = "librarian@somaliren.org"
     #DataCite configurations
     ZENODO_LOCAL_DOI_PREFIXES = ["10.your.doi"]
     PIDSTORE_DATACITE_URL = "https://mds.datacite.org"
@@ -94,7 +94,7 @@ data:
     #Stats configurations
     ZENODO_STATS_PIWIK_EXPORT_ENABLED = False
     #OAI configurations
-    OAISERVER_ADMIN_EMAILS = ["librarian@your.open.access.repository.domain"]
+    OAISERVER_ADMIN_EMAILS = ["librarian@somaliren.org"]
     #Redirect configurations
     REDIRECTOR_EXTERNAL_REDIRECTS = [
         ['/dev', 'dev', 'http://developers.zenodo.org'],
@@ -111,20 +111,20 @@ data:
                               'transact%3Freset%3D1%26id%3D20'],
     ]
     #Support configurations
-    SUPPORT_EMAIL = "librarian@your.open.access.repository.domain"
-    SUPPORT_SUPPORT_EMAIL = ["librarian@your.open.access.repository.domain"]
-    SUPPORT_SENDER_EMAIL = "librarian@your.open.access.repository.domain"
+    SUPPORT_EMAIL = "librarian@somaliren.org.so"
+    SUPPORT_SUPPORT_EMAIL = ["librarian@somaliren.org.so"]
+    SUPPORT_SENDER_EMAIL = "librarian@somaliren.org.so"
     SUPPORT_SENDER_NAME = "YOUR Open Access Repository"
-    SUPPORT_EMAIL_CONFIRM_TITLE = "YOUR OAR Support"
-    SUPPORT_EMAIL_CONFIRM_BODY = """Thank you for contacting YOUR OAR support.
+    SUPPORT_EMAIL_CONFIRM_TITLE = "YOUR SORER Support"
+    SUPPORT_EMAIL_CONFIRM_BODY = """Thank you for contacting SORER support.
 
     We have received your message, and we will do our best to get back to you as \
     soon as possible.
     This is an automated confirmation of your request, please do not reply to this\
     email.
 
-    YOUR OAR Support
-    https://your.open.access.repository.domain
+    YOUR SORER Support
+    https://sorer.somaliren.org.so
     """
     SUPPORT_ISSUE_CATEGORIES = [
     {
@@ -165,7 +165,7 @@ data:
             'since our support staff will have to reply back with a request '
             'for missing information.'
         ),
-        'recipients': ['your.open.access.repository.domain'],
+        'recipients': ['librarian@somaliren.org.so'],
     },
     {
         'key': 'upload-quota',
@@ -186,7 +186,7 @@ data:
             'journal or conference.</li>'
             '</ol>'
         ),
-        'recipients': ['librarian@your.open.access.repository.domain'],
+        'recipients': ['librarian@sorer.somaliren.org'],
     },
     {
         'key': 'record-inactivation',
@@ -196,7 +196,7 @@ data:
             'owner or a third party. Please specify the record(s) in question '
             'by the URL(s), and reason for the inactivation.'
         ),
-        'recipients': ['librarian@your.open.access.repository.domain'],
+        'recipients': ['librarian@somaliren.org.so'],
     },
     {
         'key': 'partnership',
@@ -208,7 +208,7 @@ data:
             'interested in using INFN Open Access Repository as archive for your papers, software '
             'or data, please provide details for your usecase.'
             ),
-        'recipients': ['librarian@your.open.access.repository.domain'],
+        'recipients': ['librarian@somaliren.org.so'],
     },
     {
         'key': 'tech-support',
@@ -225,14 +225,14 @@ data:
             '<strong>Do not disclose your password or REST API access tokens.'
             '</strong>'
             ),
-        'recipients': ['librarian@your.open.access.repository.domain'],
+        'recipients': ['librarian@somaliren.org.so'],
     },
     {
         'key': 'other',
         'title': 'Other',
         'description': (
             'Questions which do not fit into any other category.'),
-        'recipients': ['librarian@your.open.access.repository.domain'],
+        'recipients': ['librarian@somaliren.org.so'],
     }] 
 ---
 apiVersion: v1
