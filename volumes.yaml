@@ -15,8 +15,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/elasticsearch
-    server: 10.250.27.253
+    path: /var/sorer/elasticsearch
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -49,8 +49,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/db
-    server: 10.250.27.253
+    path: /var/sorer/db
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -83,8 +83,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/archive
-    server: 10.250.27.253
+    path: /var/sorer/archive
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -117,8 +117,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/data
-    server: 10.250.27.253
+    path: /var/sorer/data
+    server: 154.73.25.81
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -137,8 +137,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/html
-    server: 10.250.27.253
+    path: /var/sorer/html
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -185,8 +185,8 @@ spec:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /var/nfsshare/backup
-    server: 10.250.27.253
+    path: /var/sorer/backup
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1

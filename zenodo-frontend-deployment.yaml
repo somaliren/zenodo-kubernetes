@@ -41,14 +41,14 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: somaliren/zenodo:1.0.10
+        image: somaliren/zenodo:latest
         resources:
           requests:
             memory: "6Gi"
             ephemeral-storage: "6Gi"
           limits:
-            memory: "6Gi"
-            ephemeral-storage: "6Gi"
+            memory: "9Gi"
+            ephemeral-storage: "9Gi"
         volumeMounts:
         - name: zenodo-archive-storage
           mountPath: /opt/zenodo_venv/var/instance/archive
