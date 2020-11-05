@@ -44,8 +44,8 @@ spec:
         image: somaliren/zenodo:latest
         resources:
           requests:
-            memory: "6Gi"
-            ephemeral-storage: "6Gi"
+            memory: "9Gi"
+            ephemeral-storage: "9Gi"
           limits:
             memory: "9Gi"
             ephemeral-storage: "9Gi"
