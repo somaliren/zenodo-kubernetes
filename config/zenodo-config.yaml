@@ -18,8 +18,8 @@ data:
     SEARCH_ELASTIC_HOSTS = "[zenodo-es]"
     SECRET_KEY = "PASSWORD"
     SESSION_COOKIE_SECURE = "True"
-    SQLALCHEMY_DATABASE_URI = "postgresql://USER:PASSWORD@zenodo-postgres/zenodo"
-    REDIS_URL = "postgresql://USER:PASSWORD@zenodo-postgres/zenodo"
+    SQLALCHEMY_DATABASE_URI = "postgresql://sorer:jSQOohRhGLiJ7EmN@zenodo-postgres/zenodo"
+    REDIS_URL = "postgresql://sorer:jSQOohRhGLiJ7EmN@zenodo-postgres/zenodo"
     #Communities configurations
     ZENODO_COMMUNITIES_NOTIFY_DISABLED = []
     ZENODO_COMMUNITIES_AUTO_ENABLED = True
@@ -246,4 +246,3 @@ stringData:
   password: PASSWORD
   flower_broker: amqp://USER:PASSWORD@zenodo-mq:5672//
   flower_broker_api: http://USER:PASSWORD@zenodo-mq:15672/api/
-  

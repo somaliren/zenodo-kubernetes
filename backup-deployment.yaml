@@ -24,12 +24,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: zenodo-secrets
-                  key: username
+                  key: sorer
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: zenodo-secrets
-                  key: password
+                  key: jSQOohRhGLiJ7EmN
             volumeMounts:
             - name: backup-pv-volume
               mountPath: /var/backup
