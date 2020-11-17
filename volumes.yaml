@@ -16,7 +16,7 @@ spec:
     - nfsvers=4.1
   nfs:
     path: /var/sorer/elasticsearch
-    server: 154.73.25.81Since I am at step 4, Do these passwords need to match the passwords that the services were using before the container was created? I did not set any password for the four basic services zenodo uses and in the Zenodo-Kubernetes software, I do not have any password for redis-deployment.yml, mq-deployment.yml, and es-deployment.yml files. The only deployment that has password keys in it is the postgres-deployment.yml and this is how I configured the password:
+    server: 154.73.25.81
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1

@@ -44,12 +44,12 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: zenodo-secrets
-                key: sorer
+                key: username
           - name: POSTGRES_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: zenodo-secrets
-                key: jSQOohRhGLiJ7EmN
+                key: password
         resources:
           requests:
             memory: "4Gi"
