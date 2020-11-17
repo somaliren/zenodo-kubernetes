@@ -7,7 +7,7 @@ metadata:
 spec:
   storageClassName: remote
   capacity:
-    storage: 900Gi
+    storage: 10Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
@@ -30,7 +30,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 900Gi
+      storage: 10Gi
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -41,7 +41,7 @@ metadata:
 spec:
   storageClassName: remote
   capacity:
-    storage: 900Gi
+    storage: 20Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
@@ -64,7 +64,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 900Gi
+      storage: 20Gi
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -75,7 +75,7 @@ metadata:
 spec:
   storageClassName: remote
   capacity:
-    storage: 900Gi
+    storage: 700Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
@@ -98,7 +98,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 900G
+      storage: 700G
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -109,7 +109,7 @@ metadata:
 spec:
   storageClassName: remote
   capacity:
-    storage: 800Gi
+    storage: 700Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
@@ -166,7 +166,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 800Gi
+      storage: 700Gi
 ---
 kind: PersistentVolume
 apiVersion: v1
