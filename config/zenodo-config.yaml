@@ -8,13 +8,13 @@ data:
     #Global configurations
     APP_ALLOWED_HOSTS = ["sorer.somaliren.org.so"]
     #Endpoint configurations
-    ACCOUNTS_SESSION_REDIS_URL = "redis://zenodo-redis:6379/0"
+    ACCOUNTS_SESSION_REDIS_URL = "redis://zenodo-redis:6379/2"
     BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
     CELERY_BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
     QUEUES_BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
     CACHE_REDIS_URL = "redis://zenodo-redis:6379/0"
     CACHE_TYPE = "redis"
-    CELERY_RESULT_BACKEND = "redis://zenodo-redis:6379/0"
+    CELERY_RESULT_BACKEND = "redis://zenodo-redis:6379/1"
     SEARCH_ELASTIC_HOSTS = "[zenodo-es]"
     SECRET_KEY = "PASSWORD"
     SESSION_COOKIE_SECURE = "True"
@@ -187,7 +187,7 @@ data:
             'journal or conference.</li>'
             '</ol>'
         ),
-        'recipients': ['librarian@sorer.somaliren.org'],
+        'recipients': ['librarian@somaliren.org'],
     },
     {
         'key': 'record-inactivation',
