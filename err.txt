@@ -1,0 +1,21 @@
+● kubelet.service - kubelet: The Kubernetes Node Agent
+   Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled)
+  Drop-In: /etc/systemd/system/kubelet.service.d
+           └─10-kubeadm.conf
+   Active: active (running) since Sun 2020-11-22 17:31:35 EAT; 42s ago
+     Docs: https://kubernetes.io/docs/home/
+ Main PID: 7997 (kubelet)
+    Tasks: 23 (limit: 4915)
+   CGroup: /system.slice/kubelet.service
+           └─7997 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --cgroup-driver=systemd --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.2 --resolv-conf=/run/systemd/resolve/resolv.conf
+
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058013    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etcd-data" (UniqueName: "kubernetes.io/host-path/8dbc0920f078f9a87797da679fdedd28-etcd-data") pod "etcd-sorer" (UID: "8dbc0920f078f9a87797da679fdedd28")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058158    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "usr-local-share-ca-certificates" (UniqueName: "kubernetes.io/host-path/51c4470d1fccebd6a30f25cc563b51c5-usr-local-share-ca-certificates") pod "kube-apiserver-sorer" (UID: "51c4470d1fccebd6a30f25cc563b51c5")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058204    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "k8s-certs" (UniqueName: "kubernetes.io/host-path/cad460ee670e0df5d5c9cdb84ac87c00-k8s-certs") pod "kube-controller-manager-sorer" (UID: "cad460ee670e0df5d5c9cdb84ac87c00")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058284    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/3dd66788a2c7782d910d05ea37b91678-kubeconfig") pod "kube-scheduler-sorer" (UID: "3dd66788a2c7782d910d05ea37b91678")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058327    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "var-lib-calico" (UniqueName: "kubernetes.io/host-path/1a181146-e3fc-4769-ae86-13966840e726-var-lib-calico") pod "calico-node-qk85g" (UID: "1a181146-e3fc-4769-ae86-13966840e726")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058399    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "etc-ca-certificates" (UniqueName: "kubernetes.io/host-path/51c4470d1fccebd6a30f25cc563b51c5-etc-ca-certificates") pod "kube-apiserver-sorer" (UID: "51c4470d1fccebd6a30f25cc563b51c5")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058443    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kubeconfig" (UniqueName: "kubernetes.io/host-path/cad460ee670e0df5d5c9cdb84ac87c00-kubeconfig") pod "kube-controller-manager-sorer" (UID: "cad460ee670e0df5d5c9cdb84ac87c00")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058518    7997 reconciler.go:224] operationExecutor.VerifyControllerAttachedVolume started for volume "kube-proxy-token-5d8pj" (UniqueName: "kubernetes.io/secret/142accd3-30cc-4298-b3ad-e2eb573669f0-kube-proxy-token-5d8pj") pod "kube-proxy-gjs2r" (UID: "142accd3-30cc-4298-b3ad-e2eb573669f0")
+Nov 22 17:31:42 sorer kubelet[7997]: I1122 17:31:42.058563    7997 reconciler.go:157] Reconciler: start to sync state
+Nov 22 17:31:42 sorer kubelet[7997]: E1122 17:31:42.149722    7997 kubelet.go:1664] Failed creating a mirror pod for "kube-scheduler-sorer_kube-system(3dd66788a2c7782d910d05ea37b91678)": pods "kube-scheduler-sorer" already exists
