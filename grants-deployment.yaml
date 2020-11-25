@@ -12,7 +12,7 @@ spec:
         spec:
           containers:
           - name: zenodo-grants
-            image: somaliren/zenodo:v1
+            image: somaliren/zenodo:v2
             command: ["/bin/sh"]
             args: ["-c", "source /opt/zenodo_venv/bin/activate; zenodo openaire loadgrants -A"]
             volumeMounts:

@@ -9,15 +9,9 @@ data:
     APP_ALLOWED_HOSTS = ["sorer.somaliren.org.so"]
     #Endpoint configuration
     ACCOUNTS_SESSION_REDIS_URL = "redis://zenodo-redis:6379/2"
-<<<<<<< HEAD
     BROKER_URL = "amqp://guest:guest@zenodo-mq:5672//"
     CELERY_BROKER_URL = "amqp://guest:guest@zenodo-mq:5672//"
     QUEUES_BROKER_URL = "amqp://guest:guest@zenodo-mq:5672//"
-=======
-    BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
-    CELERY_BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
-    QUEUES_BROKER_URL = "amqp://USER:PASSWORD@zenodo-mq:5672//"
->>>>>>> b00a5519303b72a1043a5d865f9d7311ddc2eceb
     CACHE_REDIS_URL = "redis://zenodo-redis:6379/0"
     CACHE_TYPE = "redis"
     CELERY_RESULT_BACKEND = "redis://zenodo-redis:6379/1"

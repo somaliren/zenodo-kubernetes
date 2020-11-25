@@ -12,7 +12,7 @@ spec:
         spec:
           containers:
           - name: zenodo-stats
-            image: somaliren/zenodo:v1
+            image: somaliren/zenodo:v2
             command: ["/bin/sh"]
             args: ["-c", "source /opt/zenodo_venv/bin/activate; zenodo stats events process; zenodo stats aggregations process; zenodo stats update-records; zenodo index run"]
             volumeMounts:
