@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: worker
-        image: somaliren/zenodo:v2
+        image: somaliren/zenodo:v1
         volumeMounts:
         - name: zenodo-archive-storage
           mountPath: /opt/zenodo_venv/var/instance/archive
