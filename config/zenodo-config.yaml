@@ -34,7 +34,7 @@ data:
     THEME_SITENAME = "Somali Research and Education Repository"
     THEME_SITEURL = "https://sorer.somaliren.org.so"
     THEME_TWITTERHANDLE = "@SomaliREN"
-    THEME_LOGO = "img/sorer.svg"
+    THEME_LOGO = "img/sorer.png"
     THEME_GOOGLE_ANALYTICS_ID = "251701771"
     THEME_DOI_EXAMPLE = '10.your.doi/your.doi.suffix/21260'
     ZENODO_RECORDS_UI_LINKS_FORMAT = "https://sorer.somaliren.org.so/record/{recid}"
@@ -42,16 +42,16 @@ data:
     SECURITY_CHANGEABLE = False
     SECURITY_RECOVERABLE = False
     SECURITY_REGISTERABLE = False
-    SECURITY_LOGIN_WITHOUT_CONFIRMATION = False
+    SECURITY_LOGIN_WITHOUT_CONFIRMATION = True 
     SECURITY_EMAIL_SENDER = "librarian@sorer.somaliren.org"
     SECURITY_EMAIL_SUBJECT_REGISTER = "Welcome to %s!"%THEME_SITENAME
     #Mail configurations
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 587
-    MAIL_USE_SSL = True
-    MAIL_USE_TSL = False
-    MAIL_USERNAME = ""
-    MAIL_PASSWORD = ""
+    MAIL_USE_SSL = False
+    MAIL_USE_TSL = True
+    MAIL_USERNAME = "mbile20@gmail.com"
+    MAIL_PASSWORD = "IloveRuun00393891534497"
     MAIL_SUPPRESS_SEND = False
     ZENODO_ADMIN_EMAIL = "librarian@somaliren.org"
     ZENODO_SYSTEM_SENDER_EMAIL = "system@somaliren.org"
