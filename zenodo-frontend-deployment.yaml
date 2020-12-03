@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: somaliren/zenodo:v1
+        image: somaliren/zenodo:1.0.2
         resources:
           requests:
             memory: "4Gi"
